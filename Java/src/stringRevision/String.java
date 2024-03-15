@@ -6,6 +6,7 @@ public class String {
 		// TODO Auto-generated method stub
 		
 		System.out.println("ritik datey");
+		System.out.println();
 
 	}
 
