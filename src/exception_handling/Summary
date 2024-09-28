@@ -1,0 +1,30 @@
+The "BookYourVehicle" program is a Java-based console application that allows users to select and book a vehicle, either a car or a bus, for travel based on their choice. The program also handles payments and ensures that users provide correct input through custom exception handling.
+
+-Key Features:
+	1. Vehicle Selection:
+		- Users can select between two main vehicle types: Car or Bus.
+		- Each vehicle type has multiple options with different rates per kilometer:
+				- Cars: Innova, Ertiga, Swift Dzire, Tavera.
+				- Buses: Mahindra (18-Seater), Force (28-Seater and 32-Seater), Eicher (40-Seater), BharatBenz (52-Seater).
+
+	2. Payment Calculation:
+		- The program calculates the total cost based on the distance (km) entered by the user and the rate per km of the selected vehicle.
+		- It prompts the user to make the payment and handles scenarios where the payment is less, more, or equal to the required amount.
+
+	3. Exception Handling:
+		- Custom exceptions are used to handle specific errors:
+				- MoneyLessException: Thrown when the payment is less than the required amount.
+				- IllegalInputArgument: Thrown when an invalid vehicle or option selection is made.
+				
+	4. User Interaction:
+
+		- The program is interactive and prompts users to re-enter valid input in case of errors, ensuring a smooth booking experience.
+
+
+Program Flow:
+
+	1. Welcome Screen: Displays a welcome message and prompts the user to select a vehicle type.
+	2. Vehicle Selection: Based on the user's choice, presents available options for cars or buses.
+	3. Distance Input: Takes the travel distance in kilometers.
+	4. Payment Processing: Calculates the total cost and asks the user for payment. Provides feedback based on the payment amount (exact, excess, or insufficient).
+	5. Booking Confirmation: Confirms the booking if the payment is successful and provides a thank-you message.
