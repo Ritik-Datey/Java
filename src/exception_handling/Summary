@@ -18,7 +18,7 @@ The "BookYourVehicle" program is a Java-based console application that allows us
 				
 	4. User Interaction:
 
-		- The program is interactive and prompts users to re-enter valid input in case of errors, ensuring a smooth booking experience.
+		- The interactive program prompts users to re-enter valid input in case of errors, ensuring a smooth booking experience.
 
 
 -Program Flow:
