@@ -17,7 +17,7 @@ public class Hypotenuse {
 		System.out.println("Enter Y side : ");
 		y=sc.nextDouble();
 		
-		double result = ((x*x)+(y*y));
+		// double result = ((x*x)+(y*y));
 		
 		
 		z=Math.sqrt((x*x)+(y*y));
