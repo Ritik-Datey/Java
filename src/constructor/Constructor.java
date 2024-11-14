@@ -2789,4 +2789,51 @@ Advantages of a Private Constructor.
 	 
 */
 
+/*
+	What happens if you call this() and super() in the same constructor?
+	-- > In Java, if you try to call both this() and super() in the same constructor, 
+		it will result in a compilation error. This is because both this() and super() 
+		must be the first statement in a constructor, and only one can occupy that position.
+
+	Explanation of this() and super()
+    
+		1. this(): this() is used to call another constructor in the same class. 
+		   It allows constructor chaining within the class, helping to avoid redundant code by reusing other constructor logic.
+		2. super(): super() is used to call the parent class's constructor. 
+		   It helps initialize any inherited members before executing the subclass-specific code.	
+
+	Why Both Can't Be Used Together
+		- Both this() and super() must be the first line in a constructor. Since only 
+		  one line can be the first, you can't have both this() and super() in the same constructor.
+		- If neither this() nor super() is specified, the Java compiler automatically 
+		  inserts a call to super() as the first statement to ensure that the parent class constructor is called.	   
+    
+	Example.
+	  - Here’s an example of code that will produce a compilation error:
+
+	    public class Parent {
+			public Parent() {
+				System.out.println("Parent Constructor");
+			}
+		}
+
+		public class Child extends Parent {
+			public Child() {
+				this();       // Error: Recursive constructor invocation
+				super();      // Error: Constructor call must be the first statement
+				System.out.println("Child Constructor");
+			}
+		}
+	
+	Correct Approach.
+		If you need to call another constructor in the same class (using this()) or 
+		the superclass constructor (using super()), choose one that makes the most sense 
+		for your initialization logic. 
+	  
+	  Typically:
+		- Use this() if you’re chaining within the same class.
+		- Use super() if you’re ensuring parent class initialization.	
+
+*/
+
 
