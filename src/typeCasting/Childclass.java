@@ -5,7 +5,7 @@ public class Childclass extends Parentclass {
 	String childName = "Ritik";
 	
 	void fullName() {
-		System.out.println(childName + " "  + this.fatherName + " " + this.surName);
+		System.out.println(childName + " "  + super.fatherName + " " + super.surName);
 	}
 	
 
