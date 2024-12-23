@@ -34,6 +34,25 @@ public class MinAndMax {
 	   
 	   System.out.println("Min Value of Array is : "+ arr[0]);
 	   System.out.println("Max Value of Array is : "+ arr[arr.length-1]);
+	   
+	   
+	     
+	   // In optimize way ............
+	   
+	   int min = arr[0];
+	   int max = arr[0];
+	   
+	   for (int i = 1; i < arr.length; i++) {
+           if (arr[i] < min) {
+               min = arr[i];  // Update min
+           }
+           if (arr[i] > max) {
+               max = arr[i];  // Update max
+           }
+       }
+	   
+	   System.out.println("Min : " + min);
+	   System.out.println("Max : " + max);
 		
 	}
 
