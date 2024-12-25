@@ -25,8 +25,11 @@ public class StackClass {
 		
 	    ListIterator<Integer> iterator = list.listIterator();
 	    while(iterator.hasNext()) {
-	    	System.out.println(list.pop());
+	    	int val = iterator.next();
+	    	System.out.println(val);
+	    	
 	    }
+	    
 		
 	 // To remove and peek the value
 	
